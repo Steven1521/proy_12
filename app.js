@@ -140,6 +140,7 @@ const fs = require('fs');
 const readline = require('readline');
 
 const datosArchivos = require('./datos.json');
+const { stringify } = require('querystring');
 
 const main = async () => {
     console.clear();
@@ -203,7 +204,7 @@ const main = async () => {
         getListaProductos() {
             return this.#listaProductos;
         }
-
+/*  cargaproductos esta deserialisando */ 
         cargaArchivosProductos() {
             let contador = 0;
             if (datosArchivos.length > 0) {
@@ -221,9 +222,10 @@ const main = async () => {
             }
             console.log(`total de productos cargados ===>`.magenta + ` ${contador}`.bgBlue);
         }
-
+     /* grabaArchivoProducto esta serealisando  */
         grabaArchivoProducto() {
             const instanciaClaseAObjetos = this.#listaProductos.map((producto) => {
+           /*   el metodo map crea un nuevo array con los resultasos de la llamada a la funcion indicada aplicados a cada uno de sus elemetos  */  
                 return {
                     codigoProducto: producto.getCodigoProducto(),
                     nombreProducto: producto.getNombreProducto(),
@@ -232,9 +234,15 @@ const main = async () => {
                 };
             });
 
+           /*  stringify para copiar los datos en una cadenaJson */
+        /*    null nos permite definir un valor nulo o vacio */
+
             const cadenaJson = JSON.stringify(instanciaClaseAObjetos, null, 2);
             const nombreArchivo = 'datos.json';
             fs.writeFileSync(nombreArchivo, cadenaJson, 'UTF-8');
+           
+           /*  utf nos permite admitir cualquir tipo de caracter  */
+
 
             console.log(`DATOS GUARDADOS EN ${nombreArchivo}`.magenta);
         }
@@ -261,18 +269,18 @@ const main = async () => {
       
 
 agregarNuevoProducto() {
-    const rl = readline.createInterface({
+    const readline1 = readline.createInterface({
         input: process.stdin,
         output: process.stdout,
     });
 
-    rl.question('¿Desea agregar un nuevo producto? (si/no): '.magenta, (respuesta) => {
+    readline1.question('¿Desea agregar un nuevo producto? (si/no): '.magenta, (respuesta) => {
         if (respuesta.toLowerCase() === 'si') {
-            rl.question('Ingrese el código del nuevo producto: '.blue, (codigo) => {
-                rl.question('Ingrese el nombre del nuevo producto: '.blue, (nombre) => {
-                    rl.question('Ingrese el inventario del nuevo producto: '.blue, (inventario) => {
-                        rl.question('Ingrese el precio del nuevo producto: '.blue, (precio) => {
-                            rl.question('Ingrese el nombre del cliente: '.blue, (cliente) => {
+            readline1.question('Ingrese el código del nuevo producto: '.blue, (codigo) => {
+                readline1.question('Ingrese el nombre del nuevo producto: '.blue, (nombre) => {
+                    readline1.question('Ingrese el inventario del nuevo producto: '.blue, (inventario) => {
+                        readline1.question('Ingrese el precio del nuevo producto: '.blue, (precio) => {
+                            readline1.question('Ingrese el nombre del cliente: '.blue, (cliente) => {
                                 const nuevoProducto = new Producto();
                                 nuevoProducto.setCodigoProducto(codigo);
                                 nuevoProducto.setNombreProducto(nombre);

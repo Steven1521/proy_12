@@ -2,67 +2,67 @@
   {
     "codigoProducto": "01",
     "nombreProducto": "PANTALON",
-    "inventarioProducto": 3,
+    "inventarioProducto": 6,
     "precioProducto": 10
   },
   {
     "codigoProducto": "02",
     "nombreProducto": "CAMISETA",
-    "inventarioProducto": 19,
+    "inventarioProducto": 12,
     "precioProducto": 20
   },
   {
     "codigoProducto": "03",
     "nombreProducto": "MEDIAS",
-    "inventarioProducto": 10,
+    "inventarioProducto": 6,
     "precioProducto": 30
   },
   {
     "codigoProducto": "04",
     "nombreProducto": "CHAQUETA",
-    "inventarioProducto": 9,
+    "inventarioProducto": 16,
     "precioProducto": 40
   },
   {
     "codigoProducto": "05",
     "nombreProducto": "ZAPATOS",
-    "inventarioProducto": 2,
+    "inventarioProducto": 3,
     "precioProducto": 90
   },
   {
     "codigoProducto": "06",
     "nombreProducto": "TENIS",
-    "inventarioProducto": 7,
+    "inventarioProducto": 5,
     "precioProducto": 21
   },
   {
     "codigoProducto": "07",
     "nombreProducto": "CELULAR",
-    "inventarioProducto": 1,
+    "inventarioProducto": 5,
     "precioProducto": 23
   },
   {
     "codigoProducto": "08",
     "nombreProducto": "carro ",
-    "inventarioProducto": 8,
+    "inventarioProducto": 14,
     "precioProducto": 2000000
   },
   {
     "codigoProducto": "09",
     "nombreProducto": "jugo",
-    "inventarioProducto": 3,
+    "inventarioProducto": 16,
     "precioProducto": 4000
   },
   {
     "codigoProducto": "09",
     "nombreProducto": "moto",
-    "inventarioProducto": 19,
+    "inventarioProducto": 15,
     "precioProducto": 1500000
   },
   {
     "codigoProducto": "10",
     "nombreProducto": "computador",
-    "inventarioProducto": 1,
+    "inventarioProducto": 16,
     "precioProducto": 2000000
   }
 ]
