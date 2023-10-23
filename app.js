@@ -142,18 +142,22 @@ const readline = require('readline');
 const datosArchivos = require('./datos.json');
 const { stringify } = require('querystring');
 
+
+
 const main = async () => {
     console.clear();
     console.log('*****************************'.yellow);
     console.log('**     PROYECTO TIENDA    **'.magenta);
     console.log('*****************************\n'.yellow);
 
+    /* defino una clase llamada Producto y la encabsulo 
+ */
     class Producto {
         #codigoProducto;
         #nombreProducto;
         #inventarioProducto;
         #precioProducto;
-
+   /*  creo un metodo constructor y inicializo los atributos  */
         constructor() {
             this.#codigoProducto = '';
             this.#nombreProducto = '';
@@ -247,6 +251,8 @@ const main = async () => {
             console.log(`DATOS GUARDADOS EN ${nombreArchivo}`.magenta);
         }
 
+       /*  crea una interfaz para mostrar los productos cargados de listra de productos 
+ */
         mostrarProductos() {
             this.#listaProductos.forEach((producto) => {
                 console.log(
@@ -256,7 +262,7 @@ const main = async () => {
                     `|    ` +
                     producto.getNombreProducto() +
                     `      |`.yellow +
-                    `|    ` +
+                    `|   ` +
                     producto.getInventarioProducto() +
                     `       |`.yellow +
                     `|    ` +
@@ -266,13 +272,19 @@ const main = async () => {
             });
         }
 
-      
-
+        /* crea una interfaz que permite a la aplicación Node.js recibir entrada del usuario desde la
+         consola (teclado) y mostrar información en la consola (pantalla).   
+ */
 agregarNuevoProducto() {
     const readline1 = readline.createInterface({
         input: process.stdin,
         output: process.stdout,
     });
+
+  /*   Muestra la pregunta "¿Desea agregar un nuevo producto? (si/no)" en la
+    consola y espera una respuesta del usuario Si la respuesta del usuario es "si" se procede a realizar
+    una serie de preguntas adicionales para recopilar información sobre un nuevo producto, como 
+    el código, el nombre, el inventario, el precio y el nombre del cliente. */
 
     readline1.question('¿Desea agregar un nuevo producto? (si/no): '.magenta, (respuesta) => {
         if (respuesta.toLowerCase() === 'si') {
@@ -281,42 +293,54 @@ agregarNuevoProducto() {
                     readline1.question('Ingrese el inventario del nuevo producto: '.blue, (inventario) => {
                         readline1.question('Ingrese el precio del nuevo producto: '.blue, (precio) => {
                             readline1.question('Ingrese el nombre del cliente: '.blue, (cliente) => {
+
+                                /* Crea una nueva instancia de la clase Producto y la asigna a la variable nuevoProducto. Esta instancia
+                                 representa un nuevo producto que se agregará a la tienda. */
                                 const nuevoProducto = new Producto();
                                 nuevoProducto.setCodigoProducto(codigo);
                                 nuevoProducto.setNombreProducto(nombre);
                                 nuevoProducto.setInventarioProducto(parseInt(inventario));
                                 nuevoProducto.setPrecioProducto(parseFloat(precio));
 
+
+                              /*   Con esta información, crea una nueva instancia de la clase Producto, asigna los valores
+                                proporcionados a las propiedades de la instancia y  la agrega a la lista de
+                                productos de la tienda (this.#listaProductos). */
+
                                 this.#listaProductos.push(nuevoProducto);
 
-                                console.log('Nuevo producto agregado:'.bgGreen);
-                                console.log('Código:', codigo);
-                                console.log('Nombre:', nombre);
-                                console.log('Inventario:', inventario);
-                                console.log('Precio:', precio);
-                                console.log('Cliente:', cliente);
+                                console.log('Nuevo producto agregado:'.bgBlue);
+                                console.log('Código:'.yellow, codigo);
+                                console.log('Nombre:'.yellow, nombre);
+                                console.log('Inventario:'.yellow, inventario);
+                                console.log('Precio:'.yellow, precio);
+                                console.log('Cliente:'.yellow, cliente);
 
                             
                                 this.grabaArchivoProducto();
 
-                                
+                                /* Llama al método grabaArchivoProducto para guardar la lista actualizada
+                                 de productos en el archivo 'datos.json'.
+                                  */
                                 this.agregarNuevoProducto();
                             });
                         });
                     });
                 });
             });
+           /*  si la respues de la pregunta es no se imprimira en la pantalla el console.log  */
         } else {
             console.log('No se agregarán más productos.'.magenta);
-            rl.close();
+            readline1.close();
         }
     });
    }
  }
 
 
-
-  
+   /* Esta línea de código crea una nueva instancia (objeto) de la clase ProductoTienda y
+   la asigna a la variable productosTienda
+   */
     let productosTienda = new ProductoTienda();
 
     productosTienda.cargaArchivosProductos();
