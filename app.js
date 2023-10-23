@@ -131,7 +131,9 @@ const main = async() =>{
 
 main(); */
 
-
+/* MICHAEL STIVEN BALLEN SANCHEZ
+DAVID GOMEZ
+DAVID REYES  */
 
 require('colors');
 const fs = require('fs');
@@ -141,9 +143,9 @@ const datosArchivos = require('./datos.json');
 
 const main = async () => {
     console.clear();
-    console.log('*****************************'.blue);
+    console.log('*****************************'.yellow);
     console.log('**     PROYECTO TIENDA    **'.magenta);
-    console.log('*****************************\n'.blue);
+    console.log('*****************************\n'.yellow);
 
     class Producto {
         #codigoProducto;
@@ -240,18 +242,18 @@ const main = async () => {
         mostrarProductos() {
             this.#listaProductos.forEach((producto) => {
                 console.log(
-                    `|    `.blue.blue +
+                    `|    `.yellow +
                     producto.getCodigoProducto() +
-                    `      |`.blue +
+                    `      |`.yellow +
                     `|    ` +
                     producto.getNombreProducto() +
-                    `      |`.blue +
+                    `      |`.yellow +
                     `|    ` +
                     producto.getInventarioProducto() +
-                    `       |`.blue +
+                    `       |`.yellow +
                     `|    ` +
                     producto.getPrecioProducto() +
-                    `      |`.blue
+                    `      |`.yellow
                 );
             });
         }
