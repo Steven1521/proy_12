@@ -1,5 +1,11 @@
 [
   {
+    "codigoProducto": "04",
+    "nombreProducto": "CHAQUETA",
+    "inventarioProducto": 11,
+    "precioProducto": 40
+  },
+  {
     "codigoProducto": "05",
     "nombreProducto": "ZAPATOS",
     "inventarioProducto": 11,

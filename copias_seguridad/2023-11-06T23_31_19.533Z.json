@@ -1,5 +1,29 @@
 [
   {
+    "codigoProducto": "01",
+    "nombreProducto": "PANTALON",
+    "inventarioProducto": 11,
+    "precioProducto": 10
+  },
+  {
+    "codigoProducto": "02",
+    "nombreProducto": "CAMISETA",
+    "inventarioProducto": 13,
+    "precioProducto": 20
+  },
+  {
+    "codigoProducto": "03",
+    "nombreProducto": "MEDIAS",
+    "inventarioProducto": 5,
+    "precioProducto": 30
+  },
+  {
+    "codigoProducto": "04",
+    "nombreProducto": "CHAQUETA",
+    "inventarioProducto": 11,
+    "precioProducto": 40
+  },
+  {
     "codigoProducto": "05",
     "nombreProducto": "ZAPATOS",
     "inventarioProducto": 11,
@@ -10,6 +34,12 @@
     "nombreProducto": "TENIS",
     "inventarioProducto": 4,
     "precioProducto": 21
+  },
+  {
+    "codigoProducto": "07",
+    "nombreProducto": "CELULAR",
+    "inventarioProducto": 9,
+    "precioProducto": 23
   },
   {
     "codigoProducto": "08",
@@ -30,6 +60,12 @@
     "precioProducto": 1500000
   },
   {
+    "codigoProducto": "10",
+    "nombreProducto": "computador",
+    "inventarioProducto": 16,
+    "precioProducto": 2000000
+  },
+  {
     "codigoProducto": "11",
     "nombreProducto": "Cama",
     "inventarioProducto": 16,
@@ -46,11 +82,6 @@
     "nombreProducto": "chaqueta",
     "inventarioProducto": 3,
     "precioProducto": 1500000
-  },
-  {
-    "codigoProducto": "sdv",
-    "nombreProducto": "svfb",
-    "inventarioProducto": null,
-    "precioProducto": null
   }
+
 ]

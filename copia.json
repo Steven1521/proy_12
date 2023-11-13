@@ -1,0 +1,182 @@
+[
+  {
+    "codigoProducto": "01",
+    "nombreProducto": "PANTALON",
+    "inventarioProducto": 11,
+    "precioProducto": 10
+  },
+  {
+    "codigoProducto": "02",
+    "nombreProducto": "CAMISETA",
+    "inventarioProducto": 13,
+    "precioProducto": 20
+  },
+  {
+    "codigoProducto": "03",
+    "nombreProducto": "MEDIAS",
+    "inventarioProducto": 5,
+    "precioProducto": 30
+  },
+  {
+    "codigoProducto": "04",
+    "nombreProducto": "CHAQUETA",
+    "inventarioProducto": 11,
+    "precioProducto": 40
+  },
+  {
+    "codigoProducto": "05",
+    "nombreProducto": "ZAPATOS",
+    "inventarioProducto": 11,
+    "precioProducto": 90
+  },
+  {
+    "codigoProducto": "06",
+    "nombreProducto": "TENIS",
+    "inventarioProducto": 4,
+    "precioProducto": 21
+  },
+  {
+    "codigoProducto": "07",
+    "nombreProducto": "CELULAR",
+    "inventarioProducto": 9,
+    "precioProducto": 23
+  },
+  {
+    "codigoProducto": "08",
+    "nombreProducto": "carro ",
+    "inventarioProducto": 4,
+    "precioProducto": 2000000
+  },
+  {
+    "codigoProducto": "09",
+    "nombreProducto": "jugo",
+    "inventarioProducto": 2,
+    "precioProducto": 4000
+  },
+  {
+    "codigoProducto": "09",
+    "nombreProducto": "moto",
+    "inventarioProducto": 4,
+    "precioProducto": 1500000
+  },
+  {
+    "codigoProducto": "10",
+    "nombreProducto": "computador",
+    "inventarioProducto": 16,
+    "precioProducto": 2000000
+  },
+  {
+    "codigoProducto": "11",
+    "nombreProducto": "Cama",
+    "inventarioProducto": 16,
+    "precioProducto": 1500000
+  },
+  {
+    "codigoProducto": "10",
+    "nombreProducto": "sala",
+    "inventarioProducto": 14,
+    "precioProducto": 20000000
+  },
+  {
+    "codigoProducto": "12",
+    "nombreProducto": "chaqueta",
+    "inventarioProducto": 3,
+    "precioProducto": 1500000
+  },
+  {
+    "codigoProducto": "ncd",
+    "nombreProducto": "cds",
+    "inventarioProducto": null,
+    "precioProducto": null
+  },
+  {
+    "codigoProducto": "chbsvw",
+    "nombreProducto": "v",
+    "inventarioProducto": null,
+    "precioProducto": null
+  },
+  {
+    "codigoProducto": "hh",
+    "nombreProducto": "d",
+    "inventarioProducto": null,
+    "precioProducto": null
+  },
+  {
+    "codigoProducto": "d",
+    "nombreProducto": "d",
+    "inventarioProducto": null,
+    "precioProducto": null
+  },
+  {
+    "codigoProducto": "sdf",
+    "nombreProducto": "sdfs",
+    "inventarioProducto": null,
+    "precioProducto": null
+  },
+  {
+    "codigoProducto": "sd",
+    "nombreProducto": "fgd",
+    "inventarioProducto": 34,
+    "precioProducto": 446
+  },
+  {
+    "codigoProducto": "eer",
+    "nombreProducto": "iuo",
+    "inventarioProducto": 435,
+    "precioProducto": 456
+  },
+  {
+    "codigoProducto": "hjg",
+    "nombreProducto": "fyu",
+    "inventarioProducto": 2543,
+    "precioProducto": 325
+  },
+  {
+    "codigoProducto": "sdgh",
+    "nombreProducto": "fyj",
+    "inventarioProducto": 25,
+    "precioProducto": 236
+  },
+  {
+    "codigoProducto": "+fhgfj",
+    "nombreProducto": "fgjk",
+    "inventarioProducto": 43657,
+    "precioProducto": 3246
+  },
+  {
+    "codigoProducto": "rye",
+    "nombreProducto": "sryh",
+    "inventarioProducto": 546,
+    "precioProducto": 43546
+  },
+  {
+    "codigoProducto": "fdv",
+    "nombreProducto": "vd",
+    "inventarioProducto": null,
+    "precioProducto": null
+  },
+  {
+    "codigoProducto": "dcs ",
+    "nombreProducto": "svd",
+    "inventarioProducto": null,
+    "precioProducto": null
+  },
+  {
+    "codigoProducto": "ds",
+    "nombreProducto": "sdc",
+    "inventarioProducto": null,
+    "precioProducto": null
+  },
+  {
+    "codigoProducto": "sdv",
+    "nombreProducto": "v",
+    "inventarioProducto": null,
+    "precioProducto": 32
+  },
+  {
+    "codigoProducto": "dm ",
+    "nombreProducto": "wf",
+    "inventarioProducto": 234,
+    "precioProducto": 245
+  }
+]
